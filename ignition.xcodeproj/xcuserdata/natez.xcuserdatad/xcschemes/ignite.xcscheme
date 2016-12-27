@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0820"
-   version = "1.3">
+   wasCreatedForAppExtension = "YES"
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2E578401E1207B20011D4FC"
-               BuildableName = "ignition.framework"
-               BlueprintName = "ignition"
+               BlueprintIdentifier = "D2E5785E1E1207E70011D4FC"
+               BuildableName = "ignite.appex"
+               BlueprintName = "ignite"
                ReferencedContainer = "container:ignition.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,45 +29,27 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2E578491E1207B20011D4FC"
-               BuildableName = "ignitionTests.xctest"
-               BlueprintName = "ignitionTests"
-               ReferencedContainer = "container:ignition.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2E578401E1207B20011D4FC"
-            BuildableName = "ignition.framework"
-            BlueprintName = "ignition"
-            ReferencedContainer = "container:ignition.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "2">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2E578401E1207B20011D4FC"
-            BuildableName = "ignition.framework"
-            BlueprintName = "ignition"
+            BlueprintIdentifier = "D2E5785E1E1207E70011D4FC"
+            BuildableName = "ignite.appex"
+            BlueprintName = "ignite"
             ReferencedContainer = "container:ignition.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,13 +61,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "2">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2E578401E1207B20011D4FC"
-            BuildableName = "ignition.framework"
-            BlueprintName = "ignition"
+            BlueprintIdentifier = "D2E5785E1E1207E70011D4FC"
+            BuildableName = "ignite.appex"
+            BlueprintName = "ignite"
             ReferencedContainer = "container:ignition.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

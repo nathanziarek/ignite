@@ -10,6 +10,12 @@
 		D2E5784B1E1207B20011D4FC /* ignition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E578411E1207B20011D4FC /* ignition.framework */; };
 		D2E578501E1207B20011D4FC /* ignitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5784F1E1207B20011D4FC /* ignitionTests.swift */; };
 		D2E578521E1207B20011D4FC /* ignition.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E578441E1207B20011D4FC /* ignition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E578621E1207E70011D4FC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E578611E1207E70011D4FC /* Cocoa.framework */; };
+		D2E578671E1207E70011D4FC /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E578661E1207E70011D4FC /* SafariExtensionHandler.swift */; };
+		D2E578691E1207E70011D4FC /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E578681E1207E70011D4FC /* SafariExtensionViewController.swift */; };
+		D2E5786C1E1207E70011D4FC /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E5786A1E1207E70011D4FC /* SafariExtensionViewController.xib */; };
+		D2E5786F1E1207E70011D4FC /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D2E5786E1E1207E70011D4FC /* script.js */; };
+		D2E578711E1207E70011D4FC /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D2E578701E1207E70011D4FC /* ToolbarItemIcon.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,15 @@
 		D2E5784A1E1207B20011D4FC /* ignitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ignitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E5784F1E1207B20011D4FC /* ignitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ignitionTests.swift; sourceTree = "<group>"; };
 		D2E578511E1207B20011D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E5785F1E1207E70011D4FC /* ignite.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ignite.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E578611E1207E70011D4FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D2E578651E1207E70011D4FC /* ignite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ignite.entitlements; sourceTree = "<group>"; };
+		D2E578661E1207E70011D4FC /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		D2E578681E1207E70011D4FC /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		D2E5786B1E1207E70011D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		D2E5786D1E1207E70011D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E5786E1E1207E70011D4FC /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		D2E578701E1207E70011D4FC /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2E5785C1E1207E70011D4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E578621E1207E70011D4FC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +78,8 @@
 			children = (
 				D2E578431E1207B20011D4FC /* ignition */,
 				D2E5784E1E1207B20011D4FC /* ignitionTests */,
+				D2E578631E1207E70011D4FC /* ignite */,
+				D2E578601E1207E70011D4FC /* Frameworks */,
 				D2E578421E1207B20011D4FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +89,7 @@
 			children = (
 				D2E578411E1207B20011D4FC /* ignition.framework */,
 				D2E5784A1E1207B20011D4FC /* ignitionTests.xctest */,
+				D2E5785F1E1207E70011D4FC /* ignite.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +110,36 @@
 				D2E578511E1207B20011D4FC /* Info.plist */,
 			);
 			path = ignitionTests;
+			sourceTree = "<group>";
+		};
+		D2E578601E1207E70011D4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2E578611E1207E70011D4FC /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2E578631E1207E70011D4FC /* ignite */ = {
+			isa = PBXGroup;
+			children = (
+				D2E578661E1207E70011D4FC /* SafariExtensionHandler.swift */,
+				D2E578681E1207E70011D4FC /* SafariExtensionViewController.swift */,
+				D2E5786A1E1207E70011D4FC /* SafariExtensionViewController.xib */,
+				D2E5786D1E1207E70011D4FC /* Info.plist */,
+				D2E5786E1E1207E70011D4FC /* script.js */,
+				D2E578701E1207E70011D4FC /* ToolbarItemIcon.pdf */,
+				D2E578641E1207E70011D4FC /* Supporting Files */,
+			);
+			path = ignite;
+			sourceTree = "<group>";
+		};
+		D2E578641E1207E70011D4FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2E578651E1207E70011D4FC /* ignite.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +192,23 @@
 			productReference = D2E5784A1E1207B20011D4FC /* ignitionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D2E5785E1E1207E70011D4FC /* ignite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E578721E1207E70011D4FC /* Build configuration list for PBXNativeTarget "ignite" */;
+			buildPhases = (
+				D2E5785B1E1207E70011D4FC /* Sources */,
+				D2E5785C1E1207E70011D4FC /* Frameworks */,
+				D2E5785D1E1207E70011D4FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ignite;
+			productName = ignite;
+			productReference = D2E5785F1E1207E70011D4FC /* ignite.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +227,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					D2E5785E1E1207E70011D4FC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = D2E5783B1E1207B10011D4FC /* Build configuration list for PBXProject "ignition" */;
@@ -162,6 +239,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D2E578371E1207B10011D4FC;
 			productRefGroup = D2E578421E1207B20011D4FC /* Products */;
@@ -170,6 +248,7 @@
 			targets = (
 				D2E578401E1207B20011D4FC /* ignition */,
 				D2E578491E1207B20011D4FC /* ignitionTests */,
+				D2E5785E1E1207E70011D4FC /* ignite */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +265,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E5785D1E1207E70011D4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E578711E1207E70011D4FC /* ToolbarItemIcon.pdf in Resources */,
+				D2E5786C1E1207E70011D4FC /* SafariExtensionViewController.xib in Resources */,
+				D2E5786F1E1207E70011D4FC /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +296,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2E5785B1E1207E70011D4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E578691E1207E70011D4FC /* SafariExtensionViewController.swift in Sources */,
+				D2E578671E1207E70011D4FC /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +314,17 @@
 			targetProxy = D2E5784C1E1207B20011D4FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2E5786A1E1207E70011D4FC /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2E5786B1E1207E70011D4FC /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D2E578531E1207B20011D4FC /* Debug */ = {
@@ -378,6 +487,32 @@
 			};
 			name = Release;
 		};
+		D2E578731E1207E70011D4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ignite/ignite.entitlements;
+				INFOPLIST_FILE = ignite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziarek.ignite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2E578741E1207E70011D4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ignite/ignite.entitlements;
+				INFOPLIST_FILE = ignite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziarek.ignite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +538,14 @@
 			buildConfigurations = (
 				D2E578591E1207B20011D4FC /* Debug */,
 				D2E5785A1E1207B20011D4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2E578721E1207E70011D4FC /* Build configuration list for PBXNativeTarget "ignite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E578731E1207E70011D4FC /* Debug */,
+				D2E578741E1207E70011D4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
